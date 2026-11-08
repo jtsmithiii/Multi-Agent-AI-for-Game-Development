@@ -115,5 +115,3 @@ Concept exploration only, not wired into the game. Each sheet shows the option i
 [![raider-D](raider-D.png)](raider-D.png)
 
 **D** Saddle Hauler: Broad armoured chevron with a small domed turret and a wide dark cargo bar across the tail holding six Cells in a row.
-
-Source: `docs/art-concepts/gen/concepts-svg.ts` (art) and `build-concepts.ts` (sheets). SVGs per team are in `docs/art-concepts/svg/`.
