@@ -1,0 +1,51 @@
+2026-10-22T21:50:17: [net] round 1 started
+2026-10-22T21:50:17: [geckos] signalling on port 9308
+2026-10-22T21:50:17: [server] http://localhost:3100 (max 20 players, 30 ticks/s, 15 snapshots/s, seed 1718854757)
+2026-10-22T21:50:17: Geckos.io signaling server is running on port 9308
+2026-10-23T09:42:51: [net] round 1 started
+2026-10-23T09:42:51: [geckos] signalling on port 9208
+2026-10-23T09:42:51: [server] http://localhost:3000 (max 20 players, 30 ticks/s, 15 snapshots/s, seed 1761609291)
+2026-10-23T09:42:51: Geckos.io signaling server is running on port 9208
+2026-10-23T09:47:05: [net] round 1 started
+2026-10-23T09:47:05: [geckos] signalling on port 9208
+2026-10-23T09:47:05: [server] http://localhost:3000 (max 20 players, 30 ticks/s, 15 snapshots/s, seed 1761862687)
+2026-10-23T09:47:05: Geckos.io signaling server is running on port 9208
+2026-10-23T09:47:13: [net] round 1 started
+2026-10-23T09:47:13: [geckos] signalling on port 9208
+2026-10-23T09:47:13: [server] http://localhost:3000 (max 20 players, 30 ticks/s, 15 snapshots/s, seed 1761871282)
+2026-10-23T09:47:13: Geckos.io signaling server is running on port 9208
+2026-10-23T09:48:55: [net] round 1 started
+2026-10-23T09:48:55: [geckos] signalling on port 9208
+2026-10-23T09:48:55: [server] http://localhost:3000 (max 20 players, 30 ticks/s, 15 snapshots/s, seed 12345)
+2026-10-23T09:48:55: Geckos.io signaling server is running on port 9208
+2026-10-23T09:49:00: [net] round 1 started
+2026-10-23T09:49:00: [geckos] signalling on port 9208
+2026-10-23T09:49:00: [server] http://localhost:3000 (max 20 players, 30 ticks/s, 15 snapshots/s, seed 12345)
+2026-10-23T09:49:00: Geckos.io signaling server is running on port 9208
+2026-10-23T09:50:55: [net] round 1 started
+2026-10-23T09:50:55: [geckos] signalling on port 9208
+2026-10-23T09:50:55: [server] http://localhost:3000 (max 20 players, 30 ticks/s, 15 snapshots/s, seed 1762092950)
+2026-10-23T09:50:55: Geckos.io signaling server is running on port 9208
+2026-10-23T09:51:13: [geckos] connected u67vKlwXhhbUdsdFQzwmd3vY
+2026-10-23T09:51:13: [net] u67vKlwXhhbUdsdFQzwmd3vY join-accepted tank=human-1
+2026-10-23T09:51:18: [net] u67vKlwXhhbUdsdFQzwmd3vY disconnected (tank human-1 offline)
+2026-10-23T09:51:18: [geckos] disconnected u67vKlwXhhbUdsdFQzwmd3vY
+2026-10-23T09:52:14: [geckos] connected 6Izgombmydnn2MxzBKgjbS7h
+2026-10-23T09:52:14: [net] 6Izgombmydnn2MxzBKgjbS7h join-accepted tank=human-2
+2026-10-23T09:52:17: [geckos] connected g7WyWPrbKBhHzN3ZfGUSGyt3
+2026-10-23T09:52:17: [net] g7WyWPrbKBhHzN3ZfGUSGyt3 join-accepted tank=human-3
+2026-10-23T09:52:42: [net] g7WyWPrbKBhHzN3ZfGUSGyt3 disconnected (tank human-3 offline)
+2026-10-23T09:52:42: [geckos] disconnected g7WyWPrbKBhHzN3ZfGUSGyt3
+2026-10-23T11:03:48: [net] round 1 started
+2026-10-23T11:03:48: [geckos] signalling on port 9208
+2026-10-23T11:03:48: [server] http://localhost:3000 (max 20 players, 30 ticks/s, 15 snapshots/s, seed 1766466065)
+2026-10-23T11:03:48: Geckos.io signaling server is running on port 9208
+2026-10-23T11:10:58: [net] round 2 started
+2026-10-23T11:16:26: [net] round 1 started
+2026-10-23T11:16:26: [geckos] signalling on port 9208
+2026-10-23T11:16:26: [server] http://localhost:3000 (max 20 players, 30 ticks/s, 15 snapshots/s, seed 1767224088)
+2026-10-23T11:16:26: Geckos.io signaling server is running on port 9208
+2026-10-23T11:57:44: [net] round 1 started
+2026-10-23T11:57:44: [geckos] signalling on port 9208
+2026-10-23T11:57:44: [server] http://localhost:3000 (max 20 players, 30 ticks/s, 15 snapshots/s, seed 1769702328)
+2026-10-23T11:57:44: Geckos.io signaling server is running on port 9208

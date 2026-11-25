@@ -1,0 +1,29 @@
+# systemd unit for the Tank Battle server (backup to pm2, DP-1). No Docker.
+# Install on the Ubuntu server (paths assume the app lives in /opt/tank-battle):
+#   sudo cp deploy/tank-battle.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now tank-battle
+#   journalctl -u tank-battle -f
+[Unit]
+Description=Tank Battle game server
+After=network-online.target
+Wants=network-online.target
+# Crash-loop guard: more than 10 starts in 60 s and systemd stops retrying (reset with systemctl reset-failed).
+StartLimitIntervalSec=60
+StartLimitBurst=10
+
+[Service]
+Type=simple
+User=tankbattle
+WorkingDirectory=/opt/tank-battle
+# Optional settings file (KEY=value lines); the leading "-" makes it optional.
+EnvironmentFile=-/opt/tank-battle/.env
+Environment=NODE_ENV=production
+Environment=PORT=3000
+Environment=GECKOS_PORT=9208
+ExecStart=/usr/bin/node server/dist/server/src/index.js
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
