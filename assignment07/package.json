@@ -1,0 +1,36 @@
+{
+  "name": "tank-battle",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "start": "node deploy/start-local.cjs",
+    "dev": "concurrently -n server,client -c blue,green \"npm run dev -w server\" \"npm run start -w client\"",
+    "dev:lan": "concurrently -n server,client -c blue,green \"npm run dev -w server\" \"npm run start -w client -- --host 0.0.0.0\"",
+    "build": "npm run build -w server && npm run build -w client",
+    "test": "npm run test:shared && npm run test -w server && npm run test -w client",
+    "map:check": "tsx scripts/map-check.ts",
+    "map:build": "tsx tools/map-author/cli.ts",
+    "bots": "tsx tools/bots/run.ts",
+    "ai:soak": "tsx scripts/ai-soak.ts",
+    "art": "tsx client/src/assets/graphics/gen/build-art.mjs",
+    "test:shared": "tsx --test shared/test/*.test.ts tools/map-author/*.test.ts tools/bots/*.test.ts",
+    "lint": "eslint .",
+    "deploy:prepare": "npm run build -w server && node deploy/copy-assets.cjs && node deploy/check-maps.cjs --files",
+    "deploy:check-maps": "node deploy/check-maps.cjs",
+    "deploy:check-maps:selftest": "node deploy/check-maps.cjs --selftest",
+    "deploy": "node deploy/deploy.cjs",
+    "pm2:start": "npx --yes pm2 start deploy/ecosystem.config.cjs",
+    "pm2:stop": "npx --yes pm2 delete tank-battle",
+    "deploy:crash-test": "node deploy/crash-test.cjs",
+    "deploy:restart-test": "node deploy/restart-test.cjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "eslint": "^9.39.5",
+    "tsx": "^4.23.15",
+    "typescript-eslint": "^8.72.0"
+  }
+}
